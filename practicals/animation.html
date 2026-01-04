@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            .box
+            {
+                border: 1px solid black;
+                height: 200px;
+                width: 200px;
+                background-color: red;
+                animation: moveBox 1s ease-in-out infinite alternate;
+                float: left;
+            }
+            .box2
+            {
+                border: 1px solid black;
+                height: 200px;
+                width: 200px;
+                margin-top: 300px;
+                background-color: yellow;
+                animation: spin 1s ease-in-out infinite alternate;
+                border-radius: 50%;
+                border-top: 6px solid red;
+                float: left;
+
+            }
+
+             .box3
+            {
+                border: 1px solid black;
+                height: 200px;
+                width: 200px;
+                margin-top: 20px;
+                background-color: yellow;
+                animation: bounce 0.2s infinite alternate;
+                border-radius: 50%;
+                border-top: 6px solid red;
+                position: relative;
+                float: right;
+            }
+
+            @keyframes moveBox
+            {
+                form{
+                    transform: translateX(0);
+                }
+                to 
+                {
+                    transform: translateX(300px);
+                }
+            }
+
+             @keyframes spin
+            {
+                form{
+                    transform: rotate(0deg);
+                }
+                to 
+                {
+                    transform: rotate(360deg);
+                }
+            }
+
+             @keyframes bounce
+            {
+                form{
+                   top: 0;
+                }
+                to 
+                {
+                    top: 200px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div class="box2"></div>
+         <div class="box3"></div>
+    </body>
+</html>

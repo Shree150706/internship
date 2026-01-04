@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Home Page</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= HEADER ================= */
+header {
+    background: #1e293b;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ================= BANNER ================= */
+.banner {
+    background: linear-gradient(to right, #0ea5e9, #22d3ee);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* ================= MAIN CONTENT ================= */
+main {
+    flex: 1;
+    padding: 50px 30px;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.content img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.description {
+    width: 55%;
+}
+
+.description h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #1e293b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content img,
+    .description {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+        <div class="logo">MyWebsite</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+    <h1>Welcome to Our Website</h1>
+    <p>We build modern, responsive & professional websites</p>
+</section>
+
+<!-- MIDDLE CONTENT -->
+<main>
+    <div class="content">
+        <img src="img.jpg" alt="Sample Image">
+        <div class="description">
+            <h2>About Our Company</h2>
+            <p>
+                We provide industry-focused web development solutions using modern
+                technologies. Our goal is to help students and businesses build
+                strong digital presence with practical and scalable solutions.
+                  We provide industry-focused web development solutions using modern
+                technologies. Our goal is to help students and businesses build
+                strong digital presence with practical and scalable solutions.
+                  We provide industry-focused web development solutions using modern
+                technologies. Our goal is to help students and businesses build
+                strong digital presence with practical and scalable solutions.
+                  We provide industry-focused web development solutions using modern
+                technologies. Our goal is to help students and businesses build
+                strong digital presence with practical and scalable solutions.
+                  We provide industry-focused web development solutions using modern
+                technologies. Our goal is to help students and businesses build
+                strong digital presence with practical and scalable solutions.
+            </p>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 MyWebsite. All Rights Reserved.
+</footer>
+
+</body>
+</html>

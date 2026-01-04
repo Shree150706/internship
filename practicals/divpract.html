@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            #main
+            {
+                border: 1px solid black;
+                height: 500px;
+                width: 100%;
+                background-color: yellow;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                margin-top: 50px;
+                padding-left: 10%;
+            }
+            #d1
+            {
+                border: 1px solid black;
+                height: 200px;
+                width: 50%;
+                background-color: red;
+                margin-top: 150px;
+                
+            }
+             #d2
+            {
+                border: 1px solid black;
+                height: 200px;
+                width: 50%;
+                background-color: red;
+                 margin-top: 150px;
+               
+                
+            }
+            @media(max-width:600px)
+            {
+                #main
+                {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    height: 100%;
+                    width: 100%;
+
+                }
+                #d1,#d2
+                {
+                    width: 50%;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <center><div id="main">
+            <div id="d1"></div>
+            <div id="d2"></div>
+        </div></center>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Position Demo</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<style>
+  body {
+    height: 2000px; /* to enable scrolling */
+    font-family: Arial, sans-serif;
+  }
+
+  .box {
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  /* STATIC */
+  .static {
+    position: static;
+    background: gray;
+  }
+
+  /* RELATIVE */
+  .relative {
+    position: relative;
+    top: 20px;
+    left: 50px; 
+    background: blue;
+  }
+
+  /* ABSOLUTE */
+  .parent {
+    position: relative;
+    border: 2px dashed black;
+    height: 200px;
+    margin: 40px;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+  }
+
+  /* FIXED */
+  .fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+  }
+
+  /* STICKY */
+  .sticky {
+    position: sticky;
+    top: 0;
+    background: purple;
+  }
+</style>
+</head>
+
+<body>
+
+<h2>Scroll the page to see effects</h2>
+
+<!-- STATIC -->
+<div class="box static">
+  STATIC
+</div>
+
+<!-- RELATIVE -->
+<div class="box relative">
+  RELATIVE
+</div>
+
+<!-- ABSOLUTE -->
+<div class="parent">
+  Parent (relative)
+  <div class="box absolute">
+    ABSOLUTE
+  </div>
+</div>
+
+<!-- STICKY -->
+<div class="box sticky">
+  STICKY
+</div>
+
+<!-- <p>Scroll down ⬇️⬇️⬇️</p> -->
+
+<!-- FIXED -->
+<div class="box fixed">
+  FIXED
+</div>
+
+</body>
+</html>
